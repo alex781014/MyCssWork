@@ -1,0 +1,62 @@
+.more-btn {
+    color: white;
+    position: relative;
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 15px;
+    letter-spacing: .1rem;
+    padding: 0 185px 0 18px;
+    background: url(../images/btn01Bg.jpg);
+    background-size: cover;
+}
+
+.more-btn {
+    a {
+        color: white;
+    }
+}
+
+.more-btn:hover {
+    color: white;
+}
+
+.more-btn::after {
+    content: '';
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    margin-top: -2.5px;
+    width: 57px;
+    height: 5px;
+    background: url(../images/arrows_white.png);
+    background-size: contain;
+    transition: all .5s;
+}
+
+.more-btn-sec a {
+    position: relative;
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: .1em;
+    padding: 0 165px 0 18px;
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+    background-size: cover;
+}
+
+.more-btn-sec a::after {
+    content: '';
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    margin-top: -2.5px;
+    width: 57px;
+    height: 5px;
+    background: url(../images/arrows_gray.png);
+    background-size: contain;
+    transition: all .5s;
+}

@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csswork</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+</head>
+
+<body>
+    <!-- topBox start -->
+    <header class="header topBox d-none d-lg-block">
+        <div class="container text-right">
+            <div class="searchBox">
+                <a href="#"><span class="material-icons">
+                        search
+                    </span></a>
+                <input type="text" class="b-box" placeholder="商品搜尋...">
+                <span class="old">三十年老字號</span>
+            </div>
+        </div>
+    </header>
+    <!-- topBox end -->
+
+    <!-- bottomBox start -->
+    <div class="bottomBox 
+    d-none d-lg-flex">
+        <div class="container d-lg-flex">
+
+
+            <div class="logo">
+                <a href="#">威帝食品生鮮雞肉</a>
+            </div>
+
+
+            <ul class="menu pl-lg-0 ml-lg-auto mb-lg-0 d-flex align-items-lg-center">
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_about.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        關於威帝
+                        <p class="item-txt-en mb-lg-0 ">About</p>
+                    </div>
+                </li>
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_news.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        最新消息
+                        <p class="item-txt-en mb-lg-0">News</p>
+                    </div>
+                </li>
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_process.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        食在安心
+                        <p class="item-txt-en mb-lg-0">Process</p>
+                    </div>
+                </li>
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_recipes.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        美味食譜
+                        <p class="item-txt-en mb-lg-0">Recipes</p>
+                    </div>
+                </li>
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_product.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        產品介紹
+                        <p class="item-txt-en mb-lg-0">Product</p>
+                    </div>
+                </li>
+                <li class="menu-item d-flex align-items-lg-center">
+                    <a href="#"><img src="./images/icon_contact.png" alt=""></a>
+                    <div class="menu-item-txt">
+                        聯絡我們
+                        <p class="item-txt-en mb-lg-0">Contact</p>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
+    <!-- bottomBox end -->
+    <!-- mobile-bottomBox start -->
+    <div class="m-bottom-box d-lg-none d-block">
+        <div class="m-control-box m-control-box d-flex align-items-center">
+            <div class="dropdown d-flex">
+                <a class="m-menu  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </a>
+                <div class="dropdown-menu mt-3 " aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">關於威帝About</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">最新消息News</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">食在安心Process</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">美味食譜Recipes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">產品介紹Products</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">聯絡我們Contact</a>
+                </div>
+                <div class="m-logo">
+                    <a href="http://www.wei-ti.com.tw/">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- banner start -->
+    <div class="banner mt-lg-0">
+        <div class="container px-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/bc63e8e56c44e2cf9359f4f5daf64538.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/889cb02d5f44a091dae0afd834a8ccb1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/7bac62ec63f8cb10eb2f197d3f5b0697.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/1921532461107eb3fbd02e021c6bf39f.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- main start -->
+    <div class="main">
+        <div class="server container ">
+            <!-- server 網頁版內容 start-->
+            <div class="d-lg-flex d-none justify-content-lg-between">
+                <div class="link-bar d-flex">
+                    <div class="link-pic">
+                        <a href="#"><img src="./images/62da9fb45eb18216746089da00693f3b.jpg" class="w-100"
+                                alt="生鮮雞"></a>
+
+                    </div>
+                    <div class="link-title">
+                        <h3 class="mb-0"><a href="#">生鮮雞</a></h3>
+                        <p class="mb-0">健康雞肉品項多元化</p>
+                    </div>
+                </div>
+                <div class="link-bar d-flex">
+                    <div class="link-pic">
+                        <a href="#"><img src="./images/229375df3ed82be493eea9e47e14af1d.jpg" alt="全新廠房設備"></a>
+
+                    </div>
+                    <div class="link-title">
+                        <h3 class="mb-0"><a href="#">全新廠房設備</a></h3>
+                        <p class="mb-0">守護食品安全的衛生環境</p>
+                    </div>
+                </div>
+                <div class="link-bar d-flex">
+                    <div class="link-pic">
+                        <a href="#"><img src="./images/b9a86a7777d41ab4a0f5e19100a2c67e.jpg" alt="專業客製分切"></a>
+
+                    </div>
+                    <div class="link-title">
+                        <h3 class="mb-0"><a href="#">專業客製分切</a></h3>
+                        <p class="mb-0">知名連鎖餐飲指定配合</p>
+                    </div>
+                </div>
+                <div class="link-bar d-flex">
+                    <div class="link-pic">
+                        <a href="#"><img src="./images/5360e4240178497d67199e78075f9024.jpg" alt="定期檢驗"></a>
+
+                    </div>
+                    <div class="link-title">
+                        <h3 class="mb-0"><a href="#">定期檢驗</a></h3>
+                        <p class="mb-0">不含動物用藥、抗生素</p>
+                    </div>
+                </div>
+                <!-- server 網頁版內容 end-->
+
+
+
+            </div>
+            <!-- server 手機版內容 start-->
+            <div id="carouselExampleControls" class="carousel slide  d-block  d-lg-none " data-ride="carousel"
+                data-interval="2500">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <div class="link-bar d-flex w-100 align-items-center justify-content-center">
+                            <div class="link-pic">
+                                <a href="#"><img src="./images/62da9fb45eb18216746089da00693f3b.jpg" class="w-100"
+                                        alt=""></a>
+
+                            </div>
+                            <div class="link-title">
+                                <h3><a href="#">生鮮雞</a></h3>
+                                <p>健康雞肉品項多元化</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="link-bar d-flex w-100 align-items-center justify-content-center">
+                            <div class="link-pic">
+                                <a href="#"><img src="./images/229375df3ed82be493eea9e47e14af1d.jpg" class="w-100"
+                                        alt=""></a>
+
+                            </div>
+                            <div class="link-title">
+                                <h3><a href="#">全新廠房設備</a></h3>
+                                <p>守護食品安全的衛生環境</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="link-bar d-flex w-100 align-items-center justify-content-center">
+                            <div class="link-pic">
+                                <a href="#"><img src="./images/b9a86a7777d41ab4a0f5e19100a2c67e.jpg" class="w-100"
+                                        alt=""></a>
+
+                            </div>
+                            <div class="link-title">
+                                <h3><a href="#">專業客製分切</a></h3>
+                                <p>知名連鎖餐飲指定配合</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="link-bar d-flex w-100 align-items-center justify-content-center">
+                            <div class="link-pic">
+                                <a href="#"><img src="./images/5360e4240178497d67199e78075f9024.jpg" class="w-100"
+                                        alt=""></a>
+                            </div>
+                            <div class="link-title">
+                                <h3><a href="#">定期檢驗</a></h3>
+                                <p>不含動物用藥、抗生素</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- server 手機版內容 end-->
+
+        <!-- recipe start -->
+        <div class="recipeArea">
+            <div class="recipe container ">
+                <div class="reipe-title text-center">
+                    <h4>RECIPES</h4>
+                    <h2>美味食譜</h2>
+                </div>
+                <p class="recipe-p text-center">使用新鮮嫩雞烹調的道道佳餚，為您的生活注入更多美味</p>
+                <!-- slick 輪播區 -->
+                <div class="recipe-list">
+                    <div class="container">
+                        <div class="slider responsive">
+                            <div>
+                                <img src="./images/d057962630e645598cea3ead1156707b.jpg" alt="">
+                                <h3><a href="#">鮮蔬炒雞柳</a></h3>
+                            </div>
+                            <div>
+                                <img src="./images/d8774150a7712afb00b1ecb4c976b981.jpg" alt="">
+                                <h3><a href="#">香菇冬瓜雞湯</a></h3>
+                            </div>
+                            <div>
+                                <img src="./images/7547fe9b6155eb9b8573707bce406cdc.jpg" alt="">
+                                <h3><a href="#">日式香酥雞排飯</a></h3>
+                            </div>
+                            <div>
+                                <img src="./images/102e703664ba9b13a3d85f2bd7687c50.jpg" alt="">
+                                <h3><a href="#">咔啦脆雞</a></h3>
+                            </div>
+                            <div>
+                                <img src="/images/ea25ba61d5dd7b15e3b2baa5a7f76fd0.jpg" alt="">
+                                <h3><a href="#">照燒翅小腿</a></h3>
+                            </div>
+                            <div>
+                                <img src="./images/1e495ea9168a8cf82cdc216b63067b99.jpg" alt="">
+                                <h3><a href="#">迷迭香嫩煎雞腿排</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slick 輪播區 end -->
+                <!-- 按鈕區 start -->
+                <div class="more-recipe text-center">
+                    <a class="more-btn" href="#">更多食譜</a>
+                </div>
+                <!-- 按鈕區 end -->
+            </div>
+
+        </div>
+        <!-- 目錄區 -->
+        <div class="productsArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-12 ">
+                        <div class="products-header d-flex flex-lg-column flex-column-reverse">
+                            <h2 class="products-title align-self-center align-self-lg-stretch">精選商品</h2>
+                            <p class="mb-0 text-center">PRODUCTS</p>
+                        </div>
+
+                    </div>
+                    <div class="offset-lg-1 col-lg-10 col-12">
+                        <ul class="row products-List p-0">
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/cce6a8fe328f437a806f225e2a0f39b8.jpg" alt="腿排">
+                                        </a>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">腿排</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">適合多種料裡方式，炸、滷、烤，令人無法抵擋的在地美味～</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/5797d74b905b61d57bcb170104e8e089.jpg" alt="骨腿">
+                                        </a>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">骨腿</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">口感結實富有彈性，可直接烤、滷或分切為雞腿排、棒腿等。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/ac4b34c5b7a8ecfd22d6f8d1fcff916b.jpg" alt="生鮮帶皮清肉">
+                                        </a>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">生鮮帶皮清肉</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">擷取自雞胸肉部位去骨後的部位，平易價格、極致品質～</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/dc488559daa4c6233eb4623ee05d386d.jpg" alt="生鮮去皮清肉">
+                                        </a>
+                                        <div class="hotsale">
+
+                                        </div>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">生鮮去皮清肉</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">熱門商品，供不應求，選購要趁早！</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/ff1e3e80232cc4f7095890c4edf68965.jpg" alt="生鮮去皮清肉丁">
+                                        </a>
+                                        <div class="hotsale">
+
+                                        </div>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">生鮮去皮清肉丁</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">熱門商品，供不應求，選購要趁早！</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="products-card">
+                                    <div class="products-img">
+                                        <a href="#">
+                                            <img src="./images/48dadbcb599ee5b1f2349f14d872696f.jpg" alt="生鮮里肌條">
+                                        </a>
+                                        <div class="hotsale">
+
+                                        </div>
+                                    </div>
+                                    <div class="products-txt">
+                                        <h3>
+                                            <a href="product/ins.php?index_id=42">生鮮里肌條</a>
+                                        </h3>
+                                        <div class="products-price">
+                                            歡迎來電洽詢
+                                        </div>
+                                        <p class="mb-0">低脂肪，口感細嫩清爽，快炒、酥炸兩相宜～</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="products-bottom d-lg-flex justify-content-lg-between">
+                            <p class="mb-0">
+                                用30年的老經驗，供應最講究品質與檢驗的健康雞肉
+                                <br>
+                                促進肉品產銷現代化，讓消費者吃得衛生，吃得健康。
+                            </p>
+                            <div class="more-btn">
+                                <a href="#">更多產品</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 關於我們 -->
+        <div class="aboutArea">
+            <div class="container">
+                <div class="about-title">
+                    <h2>關於我們</h2>
+                    <p class="aboutus-sectitle">About Us</p>
+                    <!-- 各位觀眾三隻草 -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- 滿版輪播 -->
+            <div class="about-top-box">
+                <div class="full-banner">
+                    <ul class="slick-slider abImgList">
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/611ee13fcb837a16d46e39a608d06eca.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/80b4b3ffc5f8f4392b60586d240da8c5.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/611ee13fcb837a16d46e39a608d06eca.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/80b4b3ffc5f8f4392b60586d240da8c5.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/611ee13fcb837a16d46e39a608d06eca.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-item">
+                                <a href="#">
+                                    <img src="./images/80b4b3ffc5f8f4392b60586d240da8c5.jpg" alt="雞肉營養多">
+                                </a>
+                                <div class="txt">
+                                    <h3>
+                                        <a href="#"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 關於我們文字區 -->
+            <div class="about-txt-box">
+                <div class="container">
+                    <div class="row align-items-center text-center ">
+                        <div class="col-12 col-xl-3 mb-4">
+                            <img src="/images/bae98c504a65340f37e2629ce5749b72.png" alt="威帝">
+                        </div>
+                        <div class="col-12 col-xl-6 mb-4">
+                            <p>威帝致力於研發高品質生鮮食品，
+                                提供最符合市場與客戶需求的食品服務。<br>我們一直不斷的成長與茁壯，嚴選卜蜂、大成等優質電宰雞肉供應商，<br>提供最健康、新鮮的生鮮雞肉，低溫冷藏車配送，以達品質安全衛生。
+                            </p>
+                        </div>
+                        <div class="col-12 col-xl-3">
+                            <div class="more-btn-sec">
+                                <a href="#">詳細內容</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 關於我們 end-->
+        <!-- step start  -->
+        <section class="stepArea">
+            <div class="container">
+                <div class="step-title">
+                    <img src="./images/step_title.png" alt="">
+                </div>
+                <div class="step-content change-small">
+                    <ul class="step-list">
+                        <li class="step01 d-lg-flex" data-no="No.01">
+                            <div class="step-img ">
+                                <img src="./images/a2de74bba4e25311a14cdafe3933a49a.png" alt="公雞">
+                            </div>
+                            <div class="step-txt">
+                                <h3>嚴選電宰雞肉</h3>
+                                <p class="m-0">嚴選衛生安全的<br>新鮮國產電宰雞肉</p>
+                            </div>
+                        </li>
+                        <li class="step02 d-lg-flex" data-no="No.02">
+                            <div class="step-img ">
+                                <img src="./images/2602a34e45ba896ec82512066bad64fb.png" alt="雞腿肉">
+                            </div>
+                            <div class="step-txt">
+                                <h3>專業送驗入庫</h3>
+                                <p class="m-0">到貨盤點、廠內抽驗及<br>委外送驗、入庫</p>
+                            </div>
+                        </li>
+                        <li class="step03 d-lg-flex" data-no="No.03">
+                            <div class="step-img ">
+                                <img src="./images/226a08011b3cbd138e06a56ea5187d4c.jpg" alt="環境清潔把關">
+                            </div>
+                            <div class="step-txt">
+                                <h3>環境清潔把關</h3>
+                                <p class="m-0">入工作區前，確保人員<br>清潔消毒</p>
+                            </div>
+                        </li>
+                        <li class="step04" data-no="No.04">
+                            <div class="step-img ">
+                                <img src="./images/4bdfdd07c80491dc2106c48d8167f09a.jpg" alt="嚴格控管流程">
+                            </div>
+                            <div class="step-txt">
+                                <h3>嚴格控管流程</h3>
+                                <p class="m-0">全程嚴格控管加工作業</p>
+                            </div>
+                        </li>
+                        <li class="step05 d-lg-flex" data-no="No.05">
+                            <div class="step-img ">
+                                <img src="./images//30a1e9a2f1fae21fd3aa4937200acb44.png" alt="專人包裝作業">
+                            </div>
+                            <div class="step-txt">
+                                <h3>專人包裝作業</h3>
+                                <p class="m-0">不定期送國內專業機構檢驗</p>
+                            </div>
+                        </li>
+                        <li class="step06 d-lg-flex" data-no="No.06">
+                            <div class="step-img">
+                                <span>
+                                    <img src="./images/7dc87b4d6f41e4cffcf7c7158a8da8c5.jpg" alt="公低溫冷藏配送雞">
+                                </span>
+                            </div>
+                            <div class="step-txt">
+                                <h3>低溫冷藏配送</h3>
+                                <p class="m-0">全程低溫冷藏配送，<br>新鮮營養不流失</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 平板RWD也做出來 -->
+                <div class="step-content change">
+                    <ul class="step-list row">
+                        <li class="step02 d-lg-flex col-sm-6" data-no="No.01">
+                            <div class="step-img ">
+                                <img src="./images/a2de74bba4e25311a14cdafe3933a49a.png" alt="公雞">
+                            </div>
+                            <div class="step-txt">
+                                <h3>嚴選電宰雞肉</h3>
+                                <p class="m-0">嚴選衛生安全的<br>新鮮國產電宰雞肉</p>
+                            </div>
+                        </li>
+                        <li class="step02 d-lg-flex col-sm-6" data-no="No.02">
+                            <div class="step-img ">
+                                <img src="./images/2602a34e45ba896ec82512066bad64fb.png" alt="雞腿肉">
+                            </div>
+                            <div class="step-txt">
+                                <h3>專業送驗入庫</h3>
+                                <p class="m-0">到貨盤點、廠內抽驗及<br>委外送驗、入庫</p>
+                            </div>
+                        </li>
+                        <li class="step03 d-lg-flex col-sm-6" data-no="No.03">
+                            <div class="step-img ">
+                                <img src="./images/226a08011b3cbd138e06a56ea5187d4c.jpg" alt="環境清潔把關">
+                            </div>
+                            <div class="step-txt">
+                                <h3>環境清潔把關</h3>
+                                <p class="m-0">入工作區前，確保人員<br>清潔消毒</p>
+                            </div>
+                        </li>
+                        <li class="step03 d-lg-flex col-sm-6" data-no="No.04">
+                            <div class="step-img ">
+                                <img src="./images/4bdfdd07c80491dc2106c48d8167f09a.jpg" alt="嚴格控管流程">
+                            </div>
+                            <div class="step-txt">
+                                <h3>嚴格控管流程</h3>
+                                <p class="m-0">全程嚴格控管加工作業</p>
+                            </div>
+                        </li>
+                        <li class="step02 d-lg-flex col-sm-6" data-no="No.05">
+                            <div class="step-img ">
+                                <img src="./images//30a1e9a2f1fae21fd3aa4937200acb44.png" alt="專人包裝作業">
+                            </div>
+                            <div class="step-txt">
+                                <h3>專人包裝作業</h3>
+                                <p class="m-0">不定期送國內專業機構檢驗</p>
+                            </div>
+                        </li>
+                        <li class="step03 d-lg-flex col-sm-6" data-no="No.06">
+                            <div class="step-img">
+                                <span>
+                                    <img src="./images/7dc87b4d6f41e4cffcf7c7158a8da8c5.jpg" alt="公低溫冷藏配送雞">
+                                </span>
+                            </div>
+                            <div class="step-txt">
+                                <h3>低溫冷藏配送</h3>
+                                <p class="m-0">全程低溫冷藏配送，<br>新鮮營養不流失</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </section>
+        <!-- step End -->
+
+        <!-- featureArea start -->
+        <setion class="featureArea">
+            <div
+                class="container d-sm-flex flex-sm-column align-items-center flex-md-row-reverse justify-content-md-between">
+                <div class="feature-img">
+                    <a href="#">
+                        <img src="./images/c138e0beb305cc1daf5ec8960790d535.png" alt="">
+                    </a>
+                </div>
+                <div class="feature-txt">用 30 年的老經驗， <br>供應最講究品質與檢驗的健康雞肉， <br> 使用新鮮嫩雞烹調的道道佳餚， <br> 為您的生活注入更多美味。</div>
+
+            </div>
+        </setion>
+        <!-- featureArea end -->
+    </div>
+    <!-- main end -->
+
+    <!-- treeArea start-->
+    <div class="treeArea">
+        <div class="container">
+        </div>
+    </div>
+
+    <!-- treeArea end-->
+
+    <footer class="footer">
+        <div class="container">
+            <a class="goTop" href="#"></a>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="down-logo mb-4">
+                        <a href="#">
+                            <img src="./images/downLogo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h6 copyright mb-3">
+                        <a href="tel:+886-2-26512680">
+                            <span class="material-icons">
+                                phone
+                            </span>
+                            02 - 2651 - 2680
+                        </a>
+                        <br>
+                        <a href="tel:+886-2-26512680">
+                            <span class="material-icons">
+                                phone
+                            </span>
+                            02 - 2651 - 2681
+                        </a>
+                        <br>
+                        <a href="tel:+886-2-26512680">
+                            <span class="material-icons">
+                                fax
+                            </span>
+                            02 - 2785 - 3805
+                        </a>
+                        <br>
+                        <a href="tel:+886-2-26512680">
+                            <span class="material-icons">
+                                location_on
+                            </span>
+                            台北市南港區忠孝東路七段 587 號
+                        </a>
+                        <br>
+                        <a href="tel:+886-2-26512680">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            weiti.twn@gmail.com
+                        </a>
+                    </div>
+                    <div class="best-copyright mb-3 text-center">© Copyright All Rights Reserved.</div>
+                </div>
+                <div class="col-12 offset-lg-1 col-lg-8">
+                    <ul class="row">
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">關於威帝</div>
+                            <div class="txt">
+                                <a href="#">
+                                    企業理念
+                                </a>
+                                <a href="#">
+                                    營業項目
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">食在安心</div>
+                            <div class="txt">
+                                <a href="#">
+                                    作業流程
+                                </a>
+                                <a href="#">
+                                    商品檢測
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">產品介紹</div>
+                            <div class="txt">
+                                <a href="#">
+                                    雞胸品項
+                                </a>
+                                <a href="#">
+                                    雞腿品項
+                                </a>
+                                <a href="#">
+                                    雞翅品項
+                                </a>
+                                <a href="#">
+                                    全雞品項
+                                </a>
+                                <a href="#">
+                                    其他品項
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">最新消息</div>
+                            <div class="txt">
+                                <a href="#">
+                                    產品優惠
+                                </a>
+                                <a href="#">
+                                    威帝公告
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">美味食譜</div>
+                            <div class="txt">
+                                <a href="#">
+                                    雞胸食譜
+                                </a>
+                                <a href="#">
+                                    雞腿食譜
+                                </a>
+                                <a href="#">
+                                    雞翅食譜
+                                </a>
+                                <a href="#">
+                                    其它食譜
+                                </a>
+                                <a href="#">
+                                    所有食譜
+                                </a>
+                            </div>
+                        </li>
+                        <li class="footer-list col-6 col-lg-4">
+                            <div class="h4 footer-list-title">聯絡我們</div>
+                            <div class="txt">
+                                <a href="#">
+                                    產品追蹤單
+                                </a>
+                                <a href="#">
+                                    聯絡我們
+                                </a>
+                                <a href="#">
+                                    LINE 官方帳號
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- slick js start -->
+    <script>
+        $(".responsive").slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.abImgList').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            centerPadding: 0,
+            focusOnSelect: true,
+            variableWidth: true,
+            speed: 1500,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            cssEase: 'ease-in-out',
+            responsive: [
+                {
+                    breakpoint: 1181,
+                    settings: {
+                        variableWidth: false
+                    }
+                }
+            ]
+        });
+
+    </script>
+    <!-- slick js end -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

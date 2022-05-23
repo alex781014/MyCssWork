@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    position: relative;
+    font-family: Helvetica,
+        Arial,
+        sans-serif,
+        "微軟正黑體",
+        Heiti TC,
+        "メイリオ";
+    background: url(../images/bg.jpg);
+}
+
+ul,
+ol {
+    list-style: none;
+}
